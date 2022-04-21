@@ -39,18 +39,22 @@ addNumbers(5.34,8.9998);
 addNumbers(3876,127157);
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-  
- 
+function multiplyThree( num0 , num1 , num2){
+  console.log('In multiplyThree', num0, num1, num2);
+  let answer = num0 * num1 * num2;
+  return console.log('the Answer is:',answer);
   }
+  multiplyThree(4,5,6);
+  multiplyThree(10,3,6);
+  multiplyThree(3.2,4.5,6.9);
   
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
