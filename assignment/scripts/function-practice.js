@@ -14,7 +14,7 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-/*
+
 function helloName( name ) {
   console.log(`in helloName:`, name  );
 
@@ -62,7 +62,7 @@ console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
 
-*/
+
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 
@@ -74,8 +74,7 @@ function getLast( array ) {
     return console.log('The last item is:', array[array.length - 1 ]);
   } else {
     return; 
-  }
-  
+  }  
 }
 
 getLast(food);
