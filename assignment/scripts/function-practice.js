@@ -73,7 +73,7 @@ function getLast( array ) {
   if ( array !== 0 ) {
     return console.log('The last item is:', array[array.length - 1 ]);
   } else {
-    return 
+    return; 
   }
   
 }
@@ -83,17 +83,20 @@ getLast(candy);
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+let numbers = ['4','5','6','7','8','9'];
 function find( value, array ){
-  if(array !== ''){
-return true;
-
-  }else{
-return false
-  }
-
+  console.log('In find', value , array);
+  for (let i = 0; i <  array.length; i++) {
+    if (value === array[i] ) {
+      return console.log(true);
   
+    }
+  }
+  return console.log(false);
 }
-
+find('5',numbers);
+find('10',numbers);
+find('7',numbers);
 // ----------------------
 // Stretch Goals
 // ----------------------
